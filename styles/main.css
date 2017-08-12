@@ -1,10 +1,18 @@
+// .thumbnail {
+// 	background-color: green;
+// }
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
 .thumbnail img {
-	width: 350px;
+	width: 300px;
 	height: 200px;
 }
 
 .carousel {
-	width: 800px;
+	width: 80%;
 	margin: 0 auto;
 
 }

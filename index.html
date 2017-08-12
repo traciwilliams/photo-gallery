@@ -5,29 +5,25 @@
 		<title>Photo gallery</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-	
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 		<link rel="stylesheet" href="styles/main.css">
-
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	</head>
 	<body>
+
+<!-- 	<div class="page-header">
+			<h4>Photo Gallery</h4>
+	</div> -->
 		<nav class="navbar navbar-default">
 			<div class="container">
-				<div class="navbar-header">
+				<div class="navbar-header navbar-right">
 					<div class="navbar-brand">Photo Gallery</div><!--end of navbar-brand-->
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="">Home</a></li>
-						<li><a href="">Nature Gallery</a></li>
-						<li><a href="">Science</a></li>
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Italy</a></li>
 					</ul>
 				</div><!--end of navbar-header-->
 			<!--</div>end of container div-->
 		</nav>
-
-
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
@@ -37,19 +33,30 @@
 							<li data-target="#slider" data-slide-to="1"></li>
 							<li data-target="#slider" data-slide-to="2"></li>
 							<li data-target="#slider" data-slide-to="3"></li>
+							<li data-target="#slider" data-slide-to="4"></li>
+							<li data-target="#slider" data-slide-to="5"></li>
 						</ol>
+
+
+
 						<div class="carousel-inner">
 							<div class="item active">
-								<img src="styles/images/1.jpg">
+								<img src="styles/images/italy1.jpg">
 							</div>
 							<div class="item">
-								<img src="styles/images/2.jpg">
+								<img src="styles/images/italy2.jpg">
 							</div>
 							<div class="item">
-								<img src="styles/images/3.jpg">
+								<img src="styles/images/italy3.jpg">
 							</div>
 							<div class="item">
-								<img src="styles/images/4.jpg">
+								<img src="styles/images/italy4.jpg">
+							</div>
+							<div class="item">
+								<img src="styles/images/italy5.jpg">
+							</div>
+							<div class="item">
+								<img src="styles/images/italy6.jpg">
 							</div>
 						</div><!--end of carousel inner-->
 						
@@ -61,42 +68,121 @@
 				</div><!--col-md-10 col-md-offset-1"-->
 			<div><!--end of row div-->
 
-			<div class="page-header">
-				<h4>Photo Gallery</h4>
-			</div>
-
 			<div class="row">
 				<div class="col-md-4">
-					<a href="#" class="thumbnail">
-						<img src="styles/images/1.jpg">
+					<a href="#m1" data-toggle="modal" class="thumbnail">
+						<img src="styles/images/italy1.jpg">
 					</a>
+					<div class="modal fade" id="m1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">Image 1</div>
+								<div class="modal-body">
+									<img src="styles/images/italy1.jpg" class="img-thumbnail">
+								</div>
+								<div class="modal-footer">This is the first image</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col-md-4">
-					<a href="#" class="thumbnail">
-						<img src="styles/images/2.jpg">
+					<a href="#m2" data-toggle="modal" class="thumbnail">
+						<img src="styles/images/italy2.jpg">
 					</a>
+					<div class="modal fade" id="m2">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">Image 2</div>
+								<div class="modal-body">
+									<img src="styles/images/italy2.jpg" class="img-thumbnail">
+								</div>
+								<div class="modal-footer">This is the second image</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col-md-4">
-					<a href="#" class="thumbnail">
-						<img src="styles/images/3.jpg">
+					<a href="#m3" data-toggle="modal" class="thumbnail">
+						<img src="styles/images/italy3.jpg">
 					</a>
+					<div class="modal fade" id="m3">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">Image 3</div>
+								<div class="modal-body">
+									<img src="styles/images/italy3.jpg" class="img-thumbnail">
+								</div>
+								<div class="modal-footer">This is the third image</div>
+							</div>
+						</div>
+					</div>
 				</div>
+
+
+
 				<div class="col-md-4">
-					<a href="#" class="thumbnail">
-						<img src="styles/images/4.jpg">
+					<a href="#m4" data-toggle="modal" class="thumbnail">
+						<img src="styles/images/italy4.jpg">
 					</a>
+					<div class="modal fade" id="m4">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">Image 4</div>
+								<div class="modal-body">
+									<img src="styles/images/italy4.jpg" class="img-thumbnail">
+								</div>
+								<div class="modal-footer">This is the fourth image</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+
+				<div class="col-md-4">
+					<a href="#m4" data-toggle="modal" class="thumbnail">
+						<img src="styles/images/italy5.jpg">
+					</a>
+					<div class="modal fade" id="m4">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">Image 5</div>
+								<div class="modal-body">
+									<img src="styles/images/italy5.jpg" class="img-thumbnail">
+								</div>
+								<div class="modal-footer">This is the fifth image</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<div class="col-md-4">
+					<a href="#m6" data-toggle="modal" class="thumbnail">
+						<img src="styles/images/italy6.jpg">
+					</a>
+					<div class="modal fade" id="m6">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">Image 6</div>
+								<div class="modal-body">
+									<img src="styles/images/italy6.jpg" class="img-thumbnail">
+								</div>
+								<div class="modal-footer">This is the sixth image</div>
+							</div>
+						</div>
+					</div>
+				</div>	
 				</div>
 			</div>
 		</div><!--end of container div-->
 
 			<footer class="navbar navbar-default navbar-fixed-bottom">
 				<div class="container">
-					<p class="text-center">Copyright &copy 2017, Traci Williams. All rights reserved.</p>
+					<p class="text-center">Copyright &copy 2017, Traci Williams. All photos property of Traci Williams. All rights reserved.</p>
 					<div>
 				</div>
-			</footer>
-
-		
+			</footer>	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>			
 	<script src="scripts/app.js"></script>
 	</body>
 </html>
